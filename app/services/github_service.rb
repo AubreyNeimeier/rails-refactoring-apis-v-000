@@ -12,7 +12,6 @@ class GithubService
         {'Accept' => 'application/json'}
     access_hash = JSON.parse(response.body)
     @access_token = access_hash["access_token"]
-    binding.pry
   end
 
   def get_username
